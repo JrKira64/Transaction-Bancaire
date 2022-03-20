@@ -14,7 +14,7 @@ public class principal {
 		System.out.println("---------------------------------");
 		System.out.println("");
 		
-		System.out.println("BONJOUR, BIENVENUE SUR ECOKIRA, AVEZ VOUS UN COMPTE ?");
+		System.out.println("BONJOUR, BIENVENUE SUR ECOKIRAJ, AVEZ VOUS UN COMPTE ?");
 		System.out.println("1. OUI");
 		System.out.println("2. NON");
 
@@ -77,7 +77,7 @@ public class principal {
 				lon = (int) Math.floor(Math.log10(codeSecret)+1);
 				
 				if(lon < 4 || lon>4) {
-					System.out.println("NOMBRE DE CARACTERE NON RESPECTER");
+					System.out.println("NOMBRE DE CARACTERE NON RESPECTER (VOUS DEVEZ AVOIR UN CODE A 04 CHIFFRES)");
 				}
 				
 			}while(lon < 4 || lon>4);
