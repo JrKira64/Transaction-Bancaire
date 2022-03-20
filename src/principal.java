@@ -7,7 +7,7 @@ public class principal {
 	public static void main(String[] args) {
 		
 		Client client = new Client(null,null,0,null);
-		Compte compte = new Compte(0,0,null,null,0);
+		Compte compte = new Compte(0,0,null,null,2500);
 		
 		// @Author Kira
 		System.out.println("---------------------------------");
@@ -22,6 +22,7 @@ public class principal {
 		int lon=0;
 		int codeSecret=0;
 		int confirmPass = 0;
+		
 		
 		Scanner sc = new Scanner(System.in);
 		choice = sc.nextInt();
@@ -134,11 +135,10 @@ public class principal {
 						double somme = sc8.nextDouble();
 						
 						if(somme>compte.getsolde()) {
-							double nsomme;
 							do {
 								System.out.println("Solde Insuffisant, vous n'avez que "+ compte.getsolde()+", mettez une somme inferieur ou égale");
-								nsomme = sc8.nextDouble();
-							}while(nsomme >= compte.getsolde());
+								somme = sc8.nextDouble();
+							}while(somme <= compte.getsolde());
 							
 						}
 						
